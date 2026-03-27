@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
+import { getSiteUrl } from "@/lib/site-url";
 
 export default function robots(): MetadataRoute.Robots {
-  const url = "https://website-eta-puce-89.vercel.app";
+  const url = getSiteUrl();
 
   return {
     rules: {

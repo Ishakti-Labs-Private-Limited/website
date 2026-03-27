@@ -1,7 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { getSiteUrl } from "@/lib/site-url";
 
-const siteUrl = "https://website-eta-puce-89.vercel.app";
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
